@@ -1,0 +1,37 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Error: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误：%@"
+          }
+        }
+      }
+    },
+    "Recoco (%@)" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recoco（%@）"
+          }
+        }
+      }
+    },
+    "Welcome" : {
+      "comment" : "Demo button",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "欢迎"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

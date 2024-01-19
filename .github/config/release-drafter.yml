@@ -1,0 +1,59 @@
+# Copyright 2024 Recoco
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name-template: v$RESOLVED_VERSION
+tag-template: v$RESOLVED_VERSION
+
+filter-by-commitish: true
+
+exclude-labels:
+  - skip-changelog
+
+categories:
+  - title: 💥 BREAKING CHANGES
+    labels:
+      - breaking change
+  - title: Enhancements
+    labels:
+      - enhancement
+  - title: Bug Fixes
+    labels:
+      - bug
+  - title: Maintenance
+    collapse-after: 3
+    labels:
+      - chore
+      - dependencies
+
+change-template: '- [`#$NUMBER`]($URL) $TITLE'
+change-title-escapes: \<*_&
+
+version-resolver:
+  major:
+    labels:
+      - breaking change
+  minor:
+    labels:
+      - enhancement
+  default: patch
+
+template: |
+  # 🎁 What's Changed
+
+  $CHANGES
+
+  <br/>
+
+  <!-- **Release Notes**: Learn more in our [blog post](https://recoco-ac.github.io/recoco/blog/releases/RELEASE_VERSION). -->
+  **Full Changelog**: https://github.com/$OWNER/$REPOSITORY/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
