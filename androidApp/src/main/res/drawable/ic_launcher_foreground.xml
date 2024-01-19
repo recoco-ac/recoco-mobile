@@ -1,0 +1,41 @@
+<!--
+  ~ Copyright 2024 Recoco
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1080">
+  <group android:scaleX="0.73"
+      android:scaleY="0.73"
+      android:translateX="145.8"
+      android:translateY="145.8">
+    <group android:scaleX="0.825"
+        android:scaleY="0.825"
+        android:translateX="111"
+        android:translateY="94.5">
+        <path
+            android:fillColor="#0042ff"
+            android:pathData="m142.6,478.5 l2.3,125.4 305,-4.1 -93.5,292.6 120.6,40 144.3,-461.1 -478.7,7.3zM473.1,147.7l-117.3,38.6 60,185.1 120.3,-39.9 -62.9,-183.9z" />
+        <path
+            android:fillColor="#0067ff"
+            android:pathData="m817.7,258.2 l-160.8,111.3 72,99.3 160.5,-110.6 -71.6,-100z" />
+        <path
+            android:fillColor="#007bff"
+            android:pathData="m730.6,601.5 l-71.7,96.9 158,120 74.5,-100.8 -160.8,-116.1z" />
+    </group>
+  </group>
+</vector>

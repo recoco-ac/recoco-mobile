@@ -1,0 +1,49 @@
+# Copyright 2024 Recoco
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[versions]
+kotlin = '1.9.20'
+agp = '8.2.1'
+spotless = '6.24.0'
+koin = '3.5.3'
+ktor = '2.3.7'
+compose = '1.5.4'
+compose-compiler = '1.5.4'
+compose-material3 = '1.1.2'
+androidx-activity-compose = '1.8.2'
+desugar-jdk = '2.0.4'
+
+[plugins]
+kotlin-multiplatform = { id = 'org.jetbrains.kotlin.multiplatform', version.ref = 'kotlin' }
+kotlinx-serialization = { id = 'org.jetbrains.kotlin.plugin.serialization', version.ref = 'kotlin' }
+kotlin-android = { id = 'org.jetbrains.kotlin.android', version.ref = 'kotlin' }
+kotlin-parcelize = { id = 'org.jetbrains.kotlin.plugin.parcelize', version.ref = 'kotlin' }
+android-library = { id = 'com.android.library', version.ref = 'agp' }
+android-application = { id = 'com.android.application', version.ref = 'agp' }
+spotless = { id = 'com.diffplug.spotless', version.ref = 'spotless' }
+
+[libraries]
+koin-core = { module = 'io.insert-koin:koin-core', version.ref = 'koin' }
+ktor-client-core = { module = 'io.ktor:ktor-client-core', version.ref = 'ktor' }
+ktor-client-logging = { module = 'io.ktor:ktor-client-logging', version.ref = 'ktor' }
+ktor-client-android = { module = 'io.ktor:ktor-client-okhttp', version.ref = 'ktor' }
+ktor-client-ios = { module = 'io.ktor:ktor-client-darwin', version.ref = 'ktor' }
+kotlin-test = { module = 'org.jetbrains.kotlin:kotlin-test', version.ref = 'kotlin' }
+desugar-jdk = { module = 'com.android.tools:desugar_jdk_libs', version.ref = 'desugar-jdk' }
+compose-ui = { module = 'androidx.compose.ui:ui', version.ref = 'compose' }
+compose-foundation = { module = 'androidx.compose.foundation:foundation', version.ref = 'compose' }
+compose-material3 = { module = 'androidx.compose.material3:material3', version.ref = 'compose-material3' }
+compose-ui-tooling = { module = 'androidx.compose.ui:ui-tooling', version.ref = 'compose' }
+compose-ui-tooling-preview = { module = 'androidx.compose.ui:ui-tooling-preview', version.ref = 'compose' }
+androidx-activity-compose = { module = 'androidx.activity:activity-compose', version.ref = 'androidx-activity-compose' }
