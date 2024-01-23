@@ -12,20 +12,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-header:
-  license:
-    spdx-id: Apache-2.0
-    copyright-owner: Recoco
-    copyright-year: 2024
-  comment: on-failure
-
-  paths-ignore:
-    - "**/build/**/*"
-    - "**/*.xcodeproj/**/*"
-
-    - "**/*.json"
-    - "**/*.md"
-    - "**/*.svg"
-
-    - "iosApp/**/*.plist"
-    - "LICENSE"

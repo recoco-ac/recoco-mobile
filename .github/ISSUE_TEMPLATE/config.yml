@@ -12,20 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-header:
-  license:
-    spdx-id: Apache-2.0
-    copyright-owner: Recoco
-    copyright-year: 2024
-  comment: on-failure
+blank_issues_enabled: false
 
-  paths-ignore:
-    - "**/build/**/*"
-    - "**/*.xcodeproj/**/*"
+contact_links:
+  - name: Ask a question or get support
+    about: Ask a question or request support for using and hosting Recoco LMS.
+    url: https://github.com/recoco-ac/recoco-mobile/discussions/
 
-    - "**/*.json"
-    - "**/*.md"
-    - "**/*.svg"
-
-    - "iosApp/**/*.plist"
-    - "LICENSE"
+  - name: Contact the Recoco team
+    about: Send a private email to the Recoco team.
+    url: https://mailxto.com/xszr5n9o3d
