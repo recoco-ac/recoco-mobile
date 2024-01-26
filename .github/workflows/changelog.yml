@@ -12,16 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Build
+name: Draft changelog
 
 on:
   push:
-  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
-    runs-on: macos-latest
+  run:
+    if: github.repository_owner == 'recoco-ac'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: read
     steps:
-      - uses: actions/checkout@v4
-
-# TODO
+      - uses: release-drafter/release-drafter@v5
+        with:
+          config-name: config/release-drafter.yml
+          disable-autolabeler: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

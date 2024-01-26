@@ -21,5 +21,7 @@ plugins {
     alias(libs.plugins.kotlin.parcelize) apply false
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotest) apply false
+    alias(libs.plugins.detekt) apply false
     alias(libs.plugins.spotless) apply false
 }

@@ -14,20 +14,32 @@
  * limitations under the License.
  */
 
+import AlertKit
 import SwiftUI
 
 import RecocoCore
 
 struct ContentView: View {
-	let greet = Greeting().greet()
+    let greet = Greeting().greet()
+    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "(Unknown Version)"
 
-	var body: some View {
-		Text(greet)
-	}
+    var body: some View {
+        Text("Recoco \(appVersion)")
+
+        Button(action: {
+            AlertKitAPI.present(
+                title: greet,
+                icon: .heart,
+                style: .iOS17AppleMusic,
+                haptic: .success
+            )
+        }) {
+            Text("Welcome")
+        }
+        .buttonStyle(.borderedProminent)
+    }
 }
 
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+#Preview {
+    ContentView()
 }

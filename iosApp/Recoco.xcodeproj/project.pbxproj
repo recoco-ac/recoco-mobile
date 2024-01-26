@@ -11,7 +11,21 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* RecocoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* RecocoApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		FB17F6312B7A7ECB005BCADD /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB17F6302B7A7ECB005BCADD /* AlertKit */; };
+		FB2E8CED2B7C58D20083C7C1 /* RecocoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E8CEC2B7C58D20083C7C1 /* RecocoUITests.swift */; };
+		FB2E8CEF2B7C58D20083C7C1 /* RecocoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E8CEE2B7C58D20083C7C1 /* RecocoUITestsLaunchTests.swift */; };
+		FB38E1EE2B7A280700553BBB /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FB38E1ED2B7A280700553BBB /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB2E8CF02B7C58D20083C7C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555FF73242A565900829871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7555FF7A242A565900829871;
+			remoteInfo = Recoco;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7555FFB4242A642300829871 /* Embed Frameworks */ = {
@@ -33,10 +47,22 @@
 		7555FF7B242A565900829871 /* Recoco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recoco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2E8CEA2B7C58D20083C7C1 /* RecocoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecocoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2E8CEC2B7C58D20083C7C1 /* RecocoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecocoUITests.swift; sourceTree = "<group>"; };
+		FB2E8CEE2B7C58D20083C7C1 /* RecocoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecocoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB38E1ED2B7A280700553BBB /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7555FF78242A565900829871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB17F6312B7A7ECB005BCADD /* AlertKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2E8CE72B7C58D20083C7C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7555FF7D242A565900829871 /* Recoco */,
+				FB2E8CEB2B7C58D20083C7C1 /* RecocoUITests */,
 				7555FF7C242A565900829871 /* Products */,
 				7555FFB0242A642200829871 /* Frameworks */,
 			);
@@ -67,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				7555FF7B242A565900829871 /* Recoco.app */,
+				FB2E8CEA2B7C58D20083C7C1 /* RecocoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +105,7 @@
 				FB9803372B5E979400EB29D9 /* View */,
 				2152FB032600AC8F00CF470E /* RecocoApp.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
-				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				FB38E1EC2B7A26B300553BBB /* Resources */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 			);
 			path = Recoco;
@@ -88,6 +116,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB2E8CEB2B7C58D20083C7C1 /* RecocoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E8CEC2B7C58D20083C7C1 /* RecocoUITests.swift */,
+				FB2E8CEE2B7C58D20083C7C1 /* RecocoUITestsLaunchTests.swift */,
+			);
+			path = RecocoUITests;
+			sourceTree = "<group>";
+		};
+		FB38E1EC2B7A26B300553BBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				FB38E1ED2B7A280700553BBB /* Localizable.xcstrings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FB9803372B5E979400EB29D9 /* View */ = {
@@ -116,9 +162,30 @@
 			dependencies = (
 			);
 			name = Recoco;
+			packageProductDependencies = (
+				FB17F6302B7A7ECB005BCADD /* AlertKit */,
+			);
 			productName = Recoco;
 			productReference = 7555FF7B242A565900829871 /* Recoco.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FB2E8CE92B7C58D20083C7C1 /* RecocoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2E8CF42B7C58D20083C7C1 /* Build configuration list for PBXNativeTarget "RecocoUITests" */;
+			buildPhases = (
+				FB2E8CE62B7C58D20083C7C1 /* Sources */,
+				FB2E8CE72B7C58D20083C7C1 /* Frameworks */,
+				FB2E8CE82B7C58D20083C7C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB2E8CF12B7C58D20083C7C1 /* PBXTargetDependency */,
+			);
+			name = RecocoUITests;
+			productName = RecocoUITests;
+			productReference = FB2E8CEA2B7C58D20083C7C1 /* RecocoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,12 +194,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				ORGANIZATIONNAME = ac.recoco;
 				TargetAttributes = {
 					7555FF7A242A565900829871 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					FB2E8CE92B7C58D20083C7C1 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 7555FF7A242A565900829871;
 					};
 				};
 			};
@@ -143,13 +214,18 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 7555FF72242A565900829871;
+			packageReferences = (
+				FB17F62F2B7A7ECB005BCADD /* XCRemoteSwiftPackageReference "AlertKit" */,
+			);
 			productRefGroup = 7555FF7C242A565900829871 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7555FF7A242A565900829871 /* Recoco */,
+				FB2E8CE92B7C58D20083C7C1 /* RecocoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +237,14 @@
 			files = (
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
+				FB38E1EE2B7A280700553BBB /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB2E8CE82B7C58D20083C7C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +280,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB2E8CE62B7C58D20083C7C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2E8CED2B7C58D20083C7C1 /* RecocoUITests.swift in Sources */,
+				FB2E8CEF2B7C58D20083C7C1 /* RecocoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB2E8CF12B7C58D20083C7C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7555FF7A242A565900829871 /* Recoco */;
+			targetProxy = FB2E8CF02B7C58D20083C7C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7555FFA3242A565B00829871 /* Debug */ = {
@@ -252,7 +353,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -309,7 +409,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -323,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Recoco/Preview Content\"";
@@ -348,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.recoco.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Recoco/Preview Content\"";
@@ -382,8 +484,59 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.recoco.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB2E8CF22B7C58D20083C7C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.recoco.mobile.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recoco;
+			};
+			name = Debug;
+		};
+		FB2E8CF32B7C58D20083C7C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ac.recoco.mobile.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Recoco;
 			};
 			name = Release;
 		};
@@ -408,7 +561,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		FB2E8CF42B7C58D20083C7C1 /* Build configuration list for PBXNativeTarget "RecocoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2E8CF22B7C58D20083C7C1 /* Debug */,
+				FB2E8CF32B7C58D20083C7C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB17F62F2B7A7ECB005BCADD /* XCRemoteSwiftPackageReference "AlertKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/AlertKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB17F6302B7A7ECB005BCADD /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB17F62F2B7A7ECB005BCADD /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7555FF73242A565900829871 /* Project object */;
 }

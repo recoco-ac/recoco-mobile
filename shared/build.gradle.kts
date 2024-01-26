@@ -19,6 +19,8 @@ plugins {
     alias(libs.plugins.kotlinx.serialization)
     alias(libs.plugins.android.library)
 
+    alias(libs.plugins.kotest)
+    alias(libs.plugins.detekt)
     alias(libs.plugins.spotless)
 }
 
@@ -59,7 +61,8 @@ kotlin {
         }
 
         commonTest.dependencies {
-            implementation(libs.kotlin.test)
+            implementation(libs.bundles.kotest)
+            runtimeOnly(libs.kotest.junit5)
         }
     }
 }
@@ -79,13 +82,32 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    dependencies {
-        coreLibraryDesugaring(libs.desugar.jdk)
+    testOptions {
+        unitTests.all {
+            it.useJUnitPlatform()
+        }
     }
+
+    dependencies {
+        coreLibraryDesugaring(libs.desugarJdk)
+    }
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    config.from += "detekt.yml"
 }
 
 spotless {
     kotlin {
         ktlint()
     }
+}
+
+tasks.getByName("detekt") {
+    dependsOn(
+        "detektMetadataCommonMain",
+        "detektAndroidRelease",
+        "detektMetadataIosMain",
+    )
 }

@@ -15,7 +15,7 @@
 name: Feature Request
 description: Suggest an improvement for Recoco LMS.
 
-title: "[Module Name] Brief description of the feature request"
+title: '[Module Name] Brief description of the feature request'
 labels:
   - enhancement
 

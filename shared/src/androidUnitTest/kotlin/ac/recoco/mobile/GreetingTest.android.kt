@@ -16,13 +16,15 @@
 
 package ac.recoco.mobile
 
-import kotlin.test.Test
-import kotlin.test.assertTrue
+import io.kotest.core.spec.style.BehaviorSpec
+import io.kotest.matchers.string.shouldContain
 
-class CommonGreetingTest {
-
-    @Test
-    fun testExample() {
-        assertTrue(Greeting().greet().contains("Hello"))
+class AndroidGreetingTest : BehaviorSpec({
+    Given("a greeter") {
+        When("call in Android") {
+            Then("should contain 'Android'") {
+                Greeting().greet() shouldContain "Android"
+            }
+        }
     }
-}
+})

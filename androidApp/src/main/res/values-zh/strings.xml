@@ -16,5 +16,5 @@
 -->
 
 <resources>
-    <color name="ic_launcher_background">#FEFFFF</color>
+    <string name="greeting">欢迎</string>
 </resources>

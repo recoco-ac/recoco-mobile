@@ -19,6 +19,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.parcelize)
 
+    alias(libs.plugins.detekt)
     alias(libs.plugins.spotless)
 }
 
@@ -71,8 +72,6 @@ android {
 }
 
 dependencies {
-    coreLibraryDesugaring(libs.desugar.jdk)
-
     implementation(project(":shared"))
 
     implementation(libs.compose.ui)
@@ -81,8 +80,15 @@ dependencies {
 
     implementation(libs.androidx.activity.compose)
 
+    coreLibraryDesugaring(libs.desugarJdk)
+    debugImplementation(libs.leakcanary)
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.compose.ui.tooling.preview)
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    config.from += "detekt.yml"
 }
 
 spotless {

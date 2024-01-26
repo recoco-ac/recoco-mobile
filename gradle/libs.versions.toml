@@ -13,14 +13,16 @@
 # limitations under the License.
 
 [versions]
-kotlin = '1.9.20'
-agp = '8.2.1'
+kotlin = '1.9.22'
+agp = '8.2.2'
+kotest = '5.8.0'
+detekt = '1.23.5'
 spotless = '6.24.0'
 koin = '3.5.3'
 ktor = '2.3.7'
-compose = '1.5.4'
-compose-compiler = '1.5.4'
-compose-material3 = '1.1.2'
+compose = '1.6.1'
+compose-compiler = '1.5.9'
+compose-material3 = '1.2.0'
 androidx-activity-compose = '1.8.2'
 desugar-jdk = '2.0.4'
 
@@ -31,6 +33,8 @@ kotlin-android = { id = 'org.jetbrains.kotlin.android', version.ref = 'kotlin' }
 kotlin-parcelize = { id = 'org.jetbrains.kotlin.plugin.parcelize', version.ref = 'kotlin' }
 android-library = { id = 'com.android.library', version.ref = 'agp' }
 android-application = { id = 'com.android.application', version.ref = 'agp' }
+kotest = { id = 'io.kotest.multiplatform', version.ref = 'kotest' }
+detekt = { id = 'io.gitlab.arturbosch.detekt', version.ref = 'detekt' }
 spotless = { id = 'com.diffplug.spotless', version.ref = 'spotless' }
 
 [libraries]
@@ -39,11 +43,20 @@ ktor-client-core = { module = 'io.ktor:ktor-client-core', version.ref = 'ktor' }
 ktor-client-logging = { module = 'io.ktor:ktor-client-logging', version.ref = 'ktor' }
 ktor-client-android = { module = 'io.ktor:ktor-client-okhttp', version.ref = 'ktor' }
 ktor-client-ios = { module = 'io.ktor:ktor-client-darwin', version.ref = 'ktor' }
-kotlin-test = { module = 'org.jetbrains.kotlin:kotlin-test', version.ref = 'kotlin' }
-desugar-jdk = { module = 'com.android.tools:desugar_jdk_libs', version.ref = 'desugar-jdk' }
+
+kotest-engine = { module = 'io.kotest:kotest-framework-engine', version.ref = 'kotest' }
+kotest-assertions = { module = 'io.kotest:kotest-assertions-core', version.ref = 'kotest' }
+kotest-property = { module = 'io.kotest:kotest-property', version.ref = 'kotest' }
+kotest-junit5 = { module = 'io.kotest:kotest-runner-junit5', version.ref = 'kotest' }
+
 compose-ui = { module = 'androidx.compose.ui:ui', version.ref = 'compose' }
 compose-foundation = { module = 'androidx.compose.foundation:foundation', version.ref = 'compose' }
 compose-material3 = { module = 'androidx.compose.material3:material3', version.ref = 'compose-material3' }
+androidx-activity-compose = { module = 'androidx.activity:activity-compose', version.ref = 'androidx-activity-compose' }
+desugarJdk = { module = 'com.android.tools:desugar_jdk_libs', version.ref = 'desugar-jdk' }
+leakcanary = { module = 'com.squareup.leakcanary:leakcanary-android', version = '2.13' }
 compose-ui-tooling = { module = 'androidx.compose.ui:ui-tooling', version.ref = 'compose' }
 compose-ui-tooling-preview = { module = 'androidx.compose.ui:ui-tooling-preview', version.ref = 'compose' }
-androidx-activity-compose = { module = 'androidx.activity:activity-compose', version.ref = 'androidx-activity-compose' }
+
+[bundles]
+kotest = ['kotest-engine', 'kotest-assertions', 'kotest-property']

@@ -16,5 +16,6 @@
 -->
 
 <resources>
-    <string name="app_name">Recoco</string>
+    <string name="app_name" translatable="false">Recoco</string>
+    <string name="greeting">Welcome</string>
 </resources>

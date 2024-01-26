@@ -36,8 +36,8 @@ categories:
     labels:
       - dependencies
 
-change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
-change-title-escapes: "\<*_&"
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: \<*_&
 
 version-resolver:
   major:

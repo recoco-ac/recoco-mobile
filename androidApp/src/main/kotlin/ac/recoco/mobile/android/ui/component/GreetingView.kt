@@ -16,18 +16,24 @@
 
 package ac.recoco.mobile.android.ui.component
 
+import ac.recoco.mobile.android.R
 import ac.recoco.mobile.android.ui.theme.RecocoTheme
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun GreetingView(text: String) {
-    Text(text = text)
+    Column {
+        Text(text = stringResource(R.string.greeting))
+        Text(text = text)
+    }
 }
 
 @Preview
 @Composable
-fun GreetingViewPreview() = RecocoTheme {
+private fun GreetingViewPreview() = RecocoTheme {
     GreetingView("Hello, Android!")
 }

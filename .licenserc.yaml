@@ -20,12 +20,13 @@ header:
   comment: on-failure
 
   paths-ignore:
-    - "**/build/**/*"
-    - "**/*.xcodeproj/**/*"
+    - '**/build/**/*'
+    - '**/*.xcodeproj/**/*'
 
-    - "**/*.json"
-    - "**/*.md"
-    - "**/*.svg"
+    - '**/*.json'
+    - '**/*.md'
+    - '**/*.svg'
+    - '**/*.xcstrings'
 
-    - "iosApp/**/*.plist"
-    - "LICENSE"
+    - 'iosApp/**/*.plist'
+    - 'LICENSE'

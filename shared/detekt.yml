@@ -12,16 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Build
-
-on:
-  push:
-  pull_request:
-
-jobs:
-  build:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-
-# TODO
+naming:
+  MatchingDeclarationName:
+    active: false

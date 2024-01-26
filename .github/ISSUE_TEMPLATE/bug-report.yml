@@ -15,7 +15,7 @@
 name: Bug Report
 description: Report a bug encountered.
 
-title: "[Module Name] Brief description of the bug encountered"
+title: '[Module Name] Brief description of the bug encountered'
 labels:
   - bug
 
